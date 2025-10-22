@@ -3,7 +3,8 @@
 ## Best Nvim there is
 
 TO-DO:
-| Column1 |
+
+TO-DO |
 | ------------- |
 | Better Undo |
 | documentation |
