@@ -10,5 +10,7 @@ map("n", "<S-Tab>", ":BufferPrevious<CR>", { desc = "Move to previous tab", nore
 map("n", "<leader>x", ":BufferClose<CR>", { desc = "Close Buffer", noremap = true })
 map("n", "<C-U>", ":redo", { desc = "Redo", noremap = true })
 
--- Soround
-map()
+-- Flash
+--del({ "n", "x", "o" }, "f")
+--del({ "n", "x", "o" }, "F")
+--

@@ -71,3 +71,14 @@ TO-DO:
 | gco            | Add Comment Below                                |
 | gcO            | Add Comment above                                |
 | C              | deletes until the end of Line                    |
+
+## Telescope
+
+| Tag         | Action                           |
+| ----------- | -------------------------------- |
+| SPACE-SPACE | search files (working directory) |
+| SPACE-fh    | search files (Home Directory)    |
+| SPACE-ff    | search files (root)              |
+| SPACE-fk    | search keymaps                   |
+| SPACE-fc    | Search config files              |
+| SPACE-fb    | Search in Buffer                 |

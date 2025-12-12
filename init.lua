@@ -3,7 +3,7 @@ require("config.lazy")
 vim.diagnostic.config({
   virtual_text = {
     prefix = function(diag)
-      return "diggah"
+      return "-"
     end,
     source = "if_many",
     spacing = 4,

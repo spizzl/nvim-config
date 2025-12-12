@@ -66,7 +66,7 @@ return {
       {
         "<leader>fh",
         function()
-          require("telescope.builtin").find_files({ cwd = vim.env.home })
+          require("telescope.builtin").find_files({ cwd = vim.env.HOME })
         end,
         desc = "Find Files from home Directory",
       },
@@ -76,6 +76,13 @@ return {
           require("telescope.builtin").keymaps()
         end,
         desc = "Find Keymaps",
+      },
+      {
+        "<leader>ff",
+        function()
+          require("telescope.builtin").find_files({ cwd = "/" })
+        end,
+        desc = "Find Files (root)",
       },
     },
     -- change some options
@@ -93,32 +100,22 @@ return {
     version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-      require("nvim-surround").setup()
+      require("nvim-surround").setup({
+        keymaps = {
+          insert = "<C-g>m",
+          insert_line = "<C-g>M",
+          normal = "ym",
+          normal_cur = "ymm",
+          normal_line = "yM",
+          normal_cur_line = "yMM",
+          visual = "M",
+          visual_line = "gM",
+          delete = "dm",
+          change = "cm",
+          change_line = "cM",
+        },
+      })
     end,
-  },
-  {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    ---@type Flash.Config
-    opts = {},
-    keys = {
-      {
-        "f",
-        mode = { "n", "x", "o" },
-        function()
-          require("flash").jump()
-        end,
-        desc = "Flash",
-      },
-      {
-        "F",
-        mode = { "n", "x", "o" },
-        function()
-          require("flash").treesitter()
-        end,
-        desc = "Flash Treesitter",
-      },
-    },
   },
   -- add pyright to lspconfig
   -- add more treesitter parsers
