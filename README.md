@@ -81,6 +81,6 @@ TO-DO:
 | SPACE-ff    | search files (root)              |
 | SPACE-fk    | search keymaps                   |
 | SPACE-fc    | Search config files              |
-| SPACE-fb    | Search in Buffer.                 |
+| SPACE-fb    | Search in Buffer                 |
 
 
