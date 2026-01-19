@@ -78,7 +78,7 @@ TO-DO:
 | ----------- | -------------------------------- |
 | SPACE-SPACE | search files (working directory) |
 | SPACE-fh    | search files (Home Directory)    |
-| SPACE-ff    | search files (root)              |
+| SPACE-ff    | search files (root Directory)              |
 | SPACE-fk    | search keymaps                   |
 | SPACE-fc    | Search config files              |
 | SPACE-fb    | Search in Buffer                 |
